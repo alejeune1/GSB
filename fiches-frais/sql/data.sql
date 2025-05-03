@@ -15,8 +15,8 @@ INSERT INTO visiteur (VIS_ID, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILL
 
 -- 3) Utilisateurs (authentification)
 INSERT INTO `USER` (id, login, password, dteConnexion, role) VALUES
-  ('CaVi', 'Victorca', 'Iroise29', NULL, 'visiteur'),
-  ('LaMa', 'IMANE',    'IMA*',     NULL, 'comptable');
+  ('CaVi', 'Victorca', 'YTREZA456', NULL, 'visiteur'),
+  ('LaMa', 'Maxime',    'Azerty123',     NULL, 'comptable');
 
 -- 4) Forfaits
 INSERT INTO frais_forfait (FOR_ID, FOR_LIB, FOR_MONTANT) VALUES
