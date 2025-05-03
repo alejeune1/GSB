@@ -1,0 +1,131 @@
+/* Fichier : public/css/style.css */
+
+:root {
+  --primary-color: #759AC9;
+  --primary-hover:  #628DC3;
+  --secondary-color: #FFFFFF;
+  --text-color:      #333333;
+  --font-family-base: Arial, sans-serif;
+  --border-radius:    4px;
+  --input-border:     #759AC9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1em;
+  font-family: var(--font-family-base);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.title,
+.titrepage,
+h1 {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.75em 1em;
+  border-radius: var(--border-radius);
+}
+
+/* Styles pour table de liste */
+.table-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+
+.table-list th,
+.table-list td {
+  padding: 0.75em;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-list th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.table-list tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.table-list a:hover {
+  text-decoration: underline;
+}
+
+/* Styles pour champs de saisie */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius);
+}
+
+/* Styles pour boutons */
+button,
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Styles pour paragraphes d'erreur */
+p.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles pour liens d'action et boutons secondaires */
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  margin: 0.5em 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn.secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
